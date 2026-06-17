@@ -398,7 +398,7 @@
     }
 
     .glyph {
-      @apply h-3 w-3 rotate-45 rounded-sm bg-black md:h-4 md:w-4;
+      @apply h-3 w-3 rotate-45 rounded-sm bg-white md:h-4 md:w-4;
     }
 
     .actions {
@@ -554,11 +554,7 @@
     }
 
     .copy {
-      @apply p-1 text-text-muted opacity-0 transition-opacity hover:text-white;
-    }
-
-    &:hover .copy {
-      @apply opacity-100;
+      @apply p-1 text-text-muted transition-opacity hover:text-white cursor-pointer;
     }
 
     .footer {

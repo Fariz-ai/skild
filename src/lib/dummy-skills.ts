@@ -1,0 +1,67 @@
+export const dummySkills: SkillRecord[] = [
+	{
+		id: "1",
+		title: "React Dashboard Builder",
+		slug: "react-dashboard-builder",
+		description:
+			"A reusable skill for creating responsive admin dashboards with React, TypeScript, and Tailwind CSS.",
+		category: "Frontend Development",
+		tags: ["React", "TypeScript", "TailwindCSS", "Dashboard"],
+		installCommand: "npm install react react-dom tailwindcss",
+		createdAt: "2026-06-17T09:00:00Z",
+		authorClerkId: "user_abc123",
+		authorEmail: "john.doe@example.com",
+	},
+	{
+		id: "2",
+		title: "Node.js REST API Generator",
+		slug: "nodejs-rest-api-generator",
+		description:
+			"A skill for scaffolding secure REST APIs using Express, JWT authentication, and PostgreSQL.",
+		category: "Backend Development",
+		tags: ["Node.js", "Express", "JWT", "PostgreSQL"],
+		installCommand: "npm install express jsonwebtoken pg dotenv",
+		createdAt: "2026-06-16T14:30:00Z",
+		authorClerkId: "user_def456",
+		authorEmail: "sarah.lee@example.com",
+	},
+	{
+		id: "3",
+		title: "Python Data Analysis Toolkit",
+		slug: "python-data-analysis-toolkit",
+		description:
+			"Provides utilities and workflows for data cleaning, visualization, and exploratory analysis.",
+		category: "Data Science",
+		tags: ["Python", "Pandas", "NumPy", "Matplotlib"],
+		installCommand: "pip install pandas numpy matplotlib",
+		createdAt: "2026-06-15T11:45:00Z",
+		authorClerkId: "user_ghi789",
+		authorEmail: "alex.smith@example.com",
+	},
+	{
+		id: "4",
+		title: "Docker Deployment Essentials",
+		slug: "docker-deployment-essentials",
+		description:
+			"A deployment skill focused on containerizing applications and managing environments with Docker.",
+		category: "DevOps",
+		tags: ["Docker", "Containers", "CI/CD", "Deployment"],
+		installCommand: "docker pull nginx:latest",
+		createdAt: "2026-06-14T08:20:00Z",
+		authorClerkId: "user_jkl012",
+		authorEmail: "maria.garcia@example.com",
+	},
+	{
+		id: "5",
+		title: "AI Chatbot Integration",
+		slug: "ai-chatbot-integration",
+		description:
+			"Integrates conversational AI capabilities into web applications using modern LLM APIs.",
+		category: "Artificial Intelligence",
+		tags: ["AI", "LLM", "Chatbot", "API"],
+		installCommand: "npm install openai",
+		createdAt: "2026-06-13T16:10:00Z",
+		authorClerkId: "user_mno345",
+		authorEmail: "david.wilson@example.com",
+	},
+];
