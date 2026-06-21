@@ -7,6 +7,7 @@ import {
 	Copy,
 	MessageSquare,
 } from "lucide-react";
+import { usePostHog } from "posthog-js/react";
 import { useState } from "react";
 
 const SkillCard = ({
@@ -18,12 +19,25 @@ const SkillCard = ({
 	tags,
 	title,
 }: SkillRecord) => {
+	const posthog = usePostHog();
 	const [copied, setCopied] = useState(false);
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(installCommand);
 		setCopied(true);
 		setTimeout(() => setCopied(false), 1500);
+		posthog.capture("skill_install_command_copied", {
+			skill_title: title,
+			install_command: installCommand,
+			category: category,
+		});
+	};
+
+	const handleOpen = () => {
+		posthog.capture("skill_opened", {
+			skill_title: title,
+			category: category,
+		});
 	};
 
 	return (
@@ -92,7 +106,12 @@ const SkillCard = ({
 						</div>
 					</div>
 					<div className="actions">
-						<Link to="/skills" className="open" title={`Open ${title}`}>
+						<Link
+							to="/skills"
+							className="open"
+							title={`Open ${title}`}
+							onClick={handleOpen}
+						>
 							<span>Open</span>
 							<ArrowUpRight size={14} />
 						</Link>
