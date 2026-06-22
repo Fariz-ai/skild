@@ -1,0 +1,7 @@
+# This is a file for you to write an un-named mutation. 
+# Only one un-named mutation is allowed per file.
+mutation {
+  skill_insert(
+    data: {id: "11111111222233334444555555555559", authorClerkId: "user_3FQtuGpamyEJnA1s1iJ9XdUbnCJ", createdAt: "2026-06-22T06:00:46.579Z", description: "A reusable skill for creating responsive admin dashboards with React, TypeScript, and Tailwind CSS.", installCommand: "npm install react react-dom tailwindcss", promptConfig: "You are an expert React and TypeScript developer specializing in admin dashboard applications.", tags: ["React", "TypeScript", "TailwindCSS", "Dashboard"], title: "React Dashboard Builder", usageExample: "Create a sales analytics dashboard with charts, user management, and responsive navigation."}
+  )
+}

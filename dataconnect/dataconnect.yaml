@@ -1,0 +1,13 @@
+specVersion: "v1beta"
+serviceId: "skild-77739-service"
+location: "asia-southeast2"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "skild-77739-database"
+      cloudSql:
+        instanceId: "skild-77739-instance"
+        # schemaValidation: "STRICT"
+        # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connectors"]
